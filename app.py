@@ -6,6 +6,9 @@ calc_lib = ctypes.CDLL('./calc.dll')
 
 operations = {
     "add": calc_lib.add,
+    "sub": calc_lib.sub,
+    "mul": calc_lib.mul,
+    "div": calc_lib.div,
 }
 
 class CalcInput(BaseModel):
